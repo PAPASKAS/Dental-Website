@@ -4,3 +4,12 @@
 a{
     color:black;
 }
+@font-face {
+    font-family: "manrope-regular";
+    src: url(/Source/Fonts/Manrope-Regular.ttf);
+}
+.pages_site li{
+    font-family:"manrope-regular";
+    font-size:14px;
+    line-height: 20px;
+}

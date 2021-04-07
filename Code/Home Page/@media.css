@@ -1,0 +1,35 @@
+@media(max-width:767px){
+    .logo{
+        order:-1;
+        margin-right:15px;
+    }
+    .logo > div{
+        margin:0;
+    }
+    .social_network{
+        display:none;
+    }
+}
+@media(max-width:550px){
+    #svg_header_teeth{
+        display:none;
+    }
+    .container{
+        padding:0;
+    }
+    .pages_site li:last-child{
+        margin-right:15px;
+    }
+}
+
+@media(max-width:425px){
+    .logo{
+        display:none;
+    }
+    .container{
+        padding:0;
+    }
+    .pages_site{
+        margin:0 auto;
+    }
+}

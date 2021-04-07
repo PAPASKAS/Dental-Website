@@ -25,8 +25,13 @@
     display:grid;
     align-items:center;
 }
-.pages_site ul li{/*Отступы слов*/
+.pages_site li:not(:last-child){/*Отступы между ними*/
     margin-right:32px;
+}
+.pages_site li:hover{
+    background-color: rgba(200, 250, 247, 0.7);
+    border-radius: 15px;
+    transition-duration: 500ms;
 }
 
 .logo{/*Logo*/
@@ -54,25 +59,5 @@
 }
 .padding_soc{/*Margin меня не устроил*/
     width:30px;
-}
-
-
-
-@media(max-width:767px){/*Mobile ver header*/
-    .logo{
-        order:-1;
-    }
-    .logo > div{
-        margin:0;
-    }
-    .social_network{
-        display:none;
-    }
-    .JS{
-        display: block;
-    }
-    .container{
-        max-width:none;
-    }
 }
 
