@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    max-width:1280px;
+    padding:0 55px;
+    margin:0 auto;
+}
+
+/* Header */
+.block_header{/*Общее начертание*/
+    display:flex;
+    height:72px;
+    justify-content: space-between;
+}
+.item_header{
+    width:300px;
+}
+
+.pages_site ul{/*Pages site*/
+    display:flex;
+}
+.pages_site{/*Вертикальное расположние*/
+    display:grid;
+    align-items:center;
+}
+.pages_site ul li{/*Отступы слов*/
+    margin-right:32px;
+}
+
+.logo{/*Logo*/
+    display:grid;
+}
+.logo > div{
+    margin:auto;
+    display:flex;
+}
+.logo a{
+    align-self:center;
+    margin-left:10px;
+}
+
+.social_network{/*Soc net*/
+    display:flex;
+}
+.container_soc{/*Container soc*/
+    margin:auto 0 auto auto;
+    display:flex;
+    align-self:flex-end;
+}
+.social_network a{
+    margin:auto 0;
+}
+.padding_soc{/*Margin меня не устроил*/
+    width:30px;
+}
+
+
+
+@media(max-width:767px){/*Mobile ver header*/
+    .logo{
+        order:-1;
+    }
+    .logo > div{
+        margin:0;
+    }
+    .social_network{
+        display:none;
+    }
+    .JS{
+        display: block;
+    }
+    .container{
+        max-width:none;
+    }
+}
+
