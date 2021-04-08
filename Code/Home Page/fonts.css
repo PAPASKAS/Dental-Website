@@ -6,7 +6,7 @@ a{
 }
 @font-face {
     font-family: "manrope-regular";
-    src: url(/Source/Fonts/Manrope-Regular.ttf);
+    src: url(../../Source/Fonts/Manrope-Regular.ttf);
 }
 /*Header*/
 .pages_site li{
