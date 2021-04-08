@@ -96,3 +96,14 @@
 #lorem_intro{
     margin-bottom:33px;
 }
+
+.block_phone{/*Block phone*/
+    background-color:#F0F6FB;
+    height:148px;
+    display:flex;
+}
+.block_phone div{
+    width:33%;
+    text-align: center;
+    margin:auto 0;
+}

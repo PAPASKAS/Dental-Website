@@ -42,4 +42,13 @@
         text-align:center;
         margin:0 auto;
     }
+    .intro{
+        margin:50px 0 50px 0;
+    }
+}
+
+@media(max-width:426px){
+    .block_phone{
+        display:none;
+    }
 }

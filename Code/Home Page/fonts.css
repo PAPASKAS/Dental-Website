@@ -44,3 +44,12 @@ a{
     line-height: 30px;
     color:#FFFFFF;
 }
+
+/*Block phone*/
+.block_phone, .block_phone a{
+    font-family: "manrope-regular";
+    font-weight:700;
+    font-size:29px;
+    line-height: 33.35px;
+    color: #0096FF;
+}
