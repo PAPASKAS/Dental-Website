@@ -8,8 +8,39 @@ a{
     font-family: "manrope-regular";
     src: url(/Source/Fonts/Manrope-Regular.ttf);
 }
+/*Header*/
 .pages_site li{
     font-family:"manrope-regular";
     font-size:14px;
     line-height: 20px;
+}
+
+/*Intro*/
+#welcome{
+    color:#0096FF;
+    font-family:"manrope-regular";
+    font-size:25px;
+    line-height:34,15px;
+    Letter-spacing:-0.38px;
+}
+#description{
+    color:#18191F;
+    font-family: "manrope-regular";
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 42px;
+}
+#lorem_intro{
+    font-family: "manrope-regular";
+    font-size: 18px;
+    font-weight: 1;
+    line-height: 32px;
+    letter-spacing: 0em;
+}
+#make_appointment{
+    font-family: "manrope-regular";
+    font-weight: 1;
+    font-size: 20px;
+    line-height: 30px;
+    color:#FFFFFF;
 }

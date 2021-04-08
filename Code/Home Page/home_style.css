@@ -4,8 +4,12 @@
 }
 .container{
     max-width:1280px;
-    padding:0 55px;
     margin:0 auto;
+}
+.container_for_padding{
+    max-width:1150px;/*Не 1170 ради отступов*/
+    margin:0 auto;
+    padding:0 10px;
 }
 
 /* Header */
@@ -61,3 +65,34 @@
     width:30px;
 }
 
+
+/* Intro */
+.intro_block{
+    display:flex;/*Расположение главных блоков*/
+    justify-content: space-between;/* for big laptop*/
+}
+.first_child_intro{
+    display:grid;/*Центрирование текста слева*/
+    margin-left:55px;
+}
+.first_child_intro div{
+    margin:auto 0;/*Центрирование текста слева*/
+}
+.make_appointment_button{/*make_appointment_button*/
+    width: 248px;
+    height: 64px;
+    border-radius:10px;
+    background-color:#0096FF;
+    display:table-cell;
+    vertical-align: middle;
+}
+#make_appointment{
+    text-align: center;
+}
+#description{
+    margin-top:15px;
+    margin-bottom:16px;
+}
+#lorem_intro{
+    margin-bottom:33px;
+}

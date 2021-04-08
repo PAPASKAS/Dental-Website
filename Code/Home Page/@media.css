@@ -1,4 +1,4 @@
-@media(max-width:767px){
+@media(max-width:767px){/*Header*/
     .logo{
         order:-1;
         margin-right:15px;
@@ -9,27 +9,37 @@
     .social_network{
         display:none;
     }
-}
-@media(max-width:550px){
-    #svg_header_teeth{
-        display:none;
+    @media(max-width:550px){
+        #svg_header_teeth{
+            display:none;
+        }
+        .container{
+            padding:0;
+        }
+        .pages_site li:last-child{
+            margin-right:15px;
+        }
     }
-    .container{
-        padding:0;
-    }
-    .pages_site li:last-child{
-        margin-right:15px;
+    
+    @media(max-width:425px){
+        .logo{
+            display:none;
+        }
+        .container{
+            padding:0;
+        }
+        .pages_site{
+            margin:0 auto;
+        }
     }
 }
 
-@media(max-width:425px){
-    .logo{
+@media(max-width:1100px){/*Intro*/
+    .second_child_intro{
         display:none;
     }
-    .container{
-        padding:0;
-    }
-    .pages_site{
+    .first_child_intro{
+        text-align:center;
         margin:0 auto;
     }
 }
