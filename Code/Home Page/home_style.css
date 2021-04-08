@@ -67,6 +67,9 @@
 
 
 /* Intro */
+.intro{
+    margin:0 0 100px 0;
+}
 .intro_block{
     display:flex;/*Расположение главных блоков*/
     justify-content: space-between;/* for big laptop*/
@@ -97,7 +100,8 @@
     margin-bottom:33px;
 }
 
-.block_phone{/*Block phone*/
+/*Block phone*/
+.block_phone{
     background-color:#F0F6FB;
     height:148px;
     display:flex;
