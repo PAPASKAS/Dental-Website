@@ -8,6 +8,10 @@ a{
     font-family: "manrope-regular";
     src: url(../../Source/Fonts/Manrope-Regular.ttf);
 }
+@font-face {
+    font-family: "helvetica-regular";
+    src: url(../../Source/Fonts/Helvetica.ttf);
+}
 /*Header*/
 .pages_site li{
     font-family:"manrope-regular";
@@ -47,9 +51,22 @@ a{
 
 /*Block phone*/
 .block_phone, .block_phone a{
-    font-family: "manrope-regular";
+    font-family: "helvetica-regular";
     font-weight:700;
     font-size:29px;
     line-height: 33.35px;
     color: #0096FF;
+}
+
+/*Service description*/
+.item_service_description{
+    color:white;
+    font-family: "helvetica-regular";
+    Line-height:16,1px;
+}
+.item_service_description div p:first-child{
+    font-size:14px;
+}
+.item_service_description div p:last-child{
+    font-size:12px;
 }

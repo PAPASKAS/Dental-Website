@@ -47,8 +47,12 @@
     }
 }
 
-@media(max-width:426px){
+@media(max-width:426px){/*Block phone*/
     .block_phone{
         display:none;
     }
+}
+
+@media(max-width:600px){/*Service description*/
+
 }
