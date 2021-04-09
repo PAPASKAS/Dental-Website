@@ -159,3 +159,36 @@
 .text_recomm{/*Отсутпы между блоков текста*/
     margin:3px 0 25px 0;
 }
+
+/*our umbrella*/
+.block_our_umbrella{/*Общее начертание*/
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+.block_our_umbrella .item_1,.item_8{/*align first and last block*/
+    grid-column:1/4;
+    text-align:center;
+}
+.block_our_umbrella .item_1{/*padding between heading and items*/
+    margin:70px 0 81px 0;
+}
+.block_our_umbrella .text_item{/*padding between text and link*/
+    margin: 0 0 40px 0;
+}
+.block_our_umbrella .link_item{/*padding between link and text and "Explore all"*/
+    margin: 0 0 85px 0;
+}
+.block_our_umbrella .link_item img{/*padding between img "arrow" and text "explore"*/
+    margin-left:9px;
+}
+.block_our_umbrella .text{/*width text*/
+    width:286px;
+}
+.block_our_umbrella .child_item_3,.child_item_6{/*align content in blocks*/
+    max-width:300px;
+    margin:0 auto;
+}
+.block_our_umbrella .child_item_4,.child_item_7{/*align content in blocks*/
+    max-width:300px;
+    float:right;
+}

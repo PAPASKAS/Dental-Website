@@ -75,7 +75,6 @@ a{
 #RELAX_YOUR_DENTIST_KNOWS_BEST{
     font-family: "manrope-regular";
     font-size: 20px;
-    font-style: normal;
     font-weight: 1;
     line-height: 27px;
     letter-spacing: -0.37692299485206604px;
@@ -83,7 +82,6 @@ a{
 .heading_text_recomm{
     font-family: "manrope-regular";
     font-size: 20px;
-    font-style: normal;
     font-weight: 1;
     line-height: 27px;
     letter-spacing: 0px;
@@ -92,8 +90,52 @@ a{
 .text_recomm{
     font-family: "Manrope-regular";
     font-size: 14px;
-    font-style: normal;
     font-weight: 1;
     line-height: 19px;
     letter-spacing: 0px;
+}
+
+/*our umbrella*/
+.block_our_umbrella .item_1 p:first-child{
+    font-family: "Manrope-regular";
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 64px;
+    letter-spacing: 0em;
+}
+.block_our_umbrella .item_1 p:last-child{
+    font-family: "Manrope-regular";
+    font-size: 36px;
+    font-weight: 1;
+    line-height: 64px;
+    letter-spacing: 0em;
+}
+.block_our_umbrella .heading{
+    font-family: "Manrope-regular";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+}
+.block_our_umbrella .text{
+    font-family: "Manrope-regular";
+    font-size: 16px;
+    font-weight: 1;
+    line-height: 26px;
+    letter-spacing: 0em;
+}
+.block_our_umbrella .link_item a{
+    font-family: "Manrope-regular";
+    font-size: 12px;
+    font-weight: 1;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #0096FF;
+}
+.block_our_umbrella .item_8 a{
+    font-family: "Manrope-regular";
+    font-size: 20px;
+    font-weight: 1;
+    line-height: 30px;
+    letter-spacing: 0em;
 }

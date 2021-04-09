@@ -98,3 +98,10 @@
         margin:0 auto;
     }
 }
+
+@media(max-width:769px){
+    .block_our_umbrella{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+    }
+}
