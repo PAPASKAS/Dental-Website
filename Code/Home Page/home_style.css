@@ -146,3 +146,16 @@
 .padding_item_service_description div p:first-child{/*padding child text*/
     margin:5px 0;
 }
+
+/*Block_of_recommendation*/
+.block_of_recommendation{/*Общее расположение и круг сзади*/
+    display:flex;
+    background: url(../../Source/Images/img_1_recomendation.svg) no-repeat center top;
+    align-items:center;
+}
+#RELAX_YOUR_DENTIST_KNOWS_BEST{/*Отсутпы между блоков текста*/
+    margin:0 0 28px 0;
+}
+.text_recomm{/*Отсутпы между блоков текста*/
+    margin:3px 0 25px 0;
+}

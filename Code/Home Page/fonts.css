@@ -70,3 +70,30 @@ a{
 .item_service_description div p:last-child{
     font-size:12px;
 }
+
+/*recommendation*/
+#RELAX_YOUR_DENTIST_KNOWS_BEST{
+    font-family: "manrope-regular";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 1;
+    line-height: 27px;
+    letter-spacing: -0.37692299485206604px;
+}
+.heading_text_recomm{
+    font-family: "manrope-regular";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 1;
+    line-height: 27px;
+    letter-spacing: 0px;
+    color: #0096FF;
+}
+.text_recomm{
+    font-family: "Manrope-regular";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 1;
+    line-height: 19px;
+    letter-spacing: 0px;
+}
