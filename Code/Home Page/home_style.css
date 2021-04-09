@@ -121,7 +121,8 @@
 
 /*Service_description*/
 .block_service_description{
-    display:flex;
+    display:grid;
+    grid-auto-flow:column;
     justify-content: space-between;
     margin:72px 0 100px 0;
 }
