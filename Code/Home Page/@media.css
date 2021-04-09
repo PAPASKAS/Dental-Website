@@ -84,6 +84,7 @@
     }
 }
 
+/*block recommendation*/
 @media(max-width:1100px){
     .img_of_recommendation{
         display:none;
@@ -99,9 +100,9 @@
     }
 }
 
+/*block our umbrella*/
 @media(max-width:769px){
-    .block_our_umbrella{
-        display:grid;
-        grid-template-columns:1fr 1fr;
+    .block_our_umbrella .item_2,.item_3,.item_4,.item_5,.item_6,.item_7{
+        display:none;
     }
 }
