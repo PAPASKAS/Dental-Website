@@ -195,12 +195,13 @@
 
 
 /*About personal*/
-.block_about_personal .heading{/*Heading text*/
+.block_about_personal .heading{/*Heading*/
     text-align: center;
     margin:100px 0 40px 0;
 }
 .block_about_doctors{/*Общее размещение*/
-    display:flex;
+    display:grid;
+    grid-auto-flow:column;
     text-align: center;
     justify-content: space-between;
 }
@@ -211,5 +212,5 @@
     margin:5px 0 5px 0;
 }
 .block_about_doctors a:not(:last-child){/*Горизонтальные отступы для соц сетей*/
-    margin-right:10px;
+    margin-right:15px;
 }
