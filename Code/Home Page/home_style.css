@@ -2,6 +2,11 @@
     margin:0;
     padding:0;
 }
+*,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
 /*Эти два контейннерта используется лишь в 3 первых блоках*/
 .container{
     max-width:1280px;

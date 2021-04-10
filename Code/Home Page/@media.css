@@ -100,7 +100,14 @@
     }
 }
 
-/*block our umbrella*/
+/*Block umbrella*/
+@media(max-width:860px){
+    .block_our_umbrella .item_2,.block_our_umbrella .item_3,.block_our_umbrella .item_4,.block_our_umbrella .item_5,.block_our_umbrella .item_6,.block_our_umbrella .item_7{
+        display: none;
+    }
+}
+
+/*block about doctor*/
 @media(max-width:1100px){
     .block_about_doctors{
         grid-template-rows:1fr 1fr;
