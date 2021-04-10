@@ -219,3 +219,53 @@
 .block_about_doctors a:not(:last-child){/*Горизонтальные отступы для соц сетей*/
     margin-right:15px;
 }
+
+/*Slider*/
+
+/*Our_blog(articles)*/
+.block_our_block .heading{/*padding between this block and slider*/
+    text-align:center;
+    margin-top:80px;
+}
+.block_our_block > .heading p:last-child{
+    margin:0 auto 43px auto;
+    max-width:540px;
+}
+.block_articles{/*общее расположение*/
+    display:flex;
+}
+.block_articles article > div > div{/*Data, like, author and icon*/
+    display:flex;
+}
+.block_articles article > div .author{
+    margin-right:38px;
+}
+.quantity_likes span:first-child:hover{
+    cursor:pointer;
+}
+.quantity_comment span:first-child:hover{
+    cursor:pointer;
+}
+.block_articles article > div .quantity_likes,
+.block_articles article > div .date{
+    margin-right:22px;
+}
+.block_articles > .item_3 > div{
+    width:92%;
+    float:right
+}
+.block_articles > .item_2 > div{
+    width:92%;
+    margin:0 auto;
+}
+.quantity_likes, .quantity_comment{
+    display:flex;
+}
+.date, .quantity_likes span, .quantity_comment span{
+    margin:auto 0;
+    margin-right:6px;
+}
+.block_articles footer p:first-child{/*vert padd in footer*/
+    margin:10px 0 6px 0;
+}
+

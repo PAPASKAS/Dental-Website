@@ -123,3 +123,21 @@
         }
     }
 }
+
+/*Slider*/
+
+
+/*Our block*/
+@media(max-width:1100px){
+    .block_articles{
+        display:grid;
+    }
+    .block_articles > .item_3 > div{
+        width:92%;
+        float:left;
+    }
+    .block_articles > .item_2 > div{
+        width:92%;
+        margin:none
+    }
+}

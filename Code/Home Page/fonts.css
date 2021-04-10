@@ -12,6 +12,10 @@ a{
     font-family: "helvetica-regular";
     src: url(../../Source/Fonts/Helvetica.ttf);
 }
+@font-face {
+    font-family: "roboto-regular";
+    src: url(../../Source/Fonts/Roboto-Regular.ttf);
+}
 /*Header*/
 .pages_site li{
     font-family:"manrope-regular";
@@ -166,3 +170,58 @@ a{
     line-height: 64px;
     letter-spacing: 0em;
 }
+
+/*Slider*/
+
+/*our_block*/
+.block_our_block > .heading p:first-child{
+    font-family: "Manrope-regular";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 64px;
+    letter-spacing: 0em;
+}
+.block_our_block > .heading p:last-child{
+    font-family: "Manrope-regular";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 1;
+    line-height: 32px;
+    letter-spacing: 0em;
+}
+.author{
+    font-family: "Roboto-regular";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    color:#2296F9;
+}
+.date, .quantity_likes, .quantity_comment{
+    font-family: "Roboto-regular";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0px;
+    color: #999999;
+}
+.block_articles footer p:first-child{
+    font-family: "Manrope-regular";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0px;
+}
+.block_articles footer p:last-child{
+    font-family: "Manrope-regular";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 1;
+    line-height: 21px;
+    letter-spacing: 0px;
+}
+
