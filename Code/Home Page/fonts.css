@@ -139,3 +139,30 @@ a{
     line-height: 30px;
     letter-spacing: 0em;
 }
+
+/*About personal*/
+.block_about_doctors .name{
+    font-family: "Manrope-regular";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 1;
+    line-height: 27px;
+    letter-spacing: -0.37692299485206604px;
+}
+.block_about_doctors .job{
+    font-family: "Manrope-regular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 1;
+    line-height: 21,86px;
+    letter-spacing: -0.37692299485206604px;
+    color: #0096FF;
+}
+.block_about_personal .heading{
+    font-family: "Manrope-regular";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 64px;
+    letter-spacing: 0em;
+}

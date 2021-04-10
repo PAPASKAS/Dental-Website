@@ -192,3 +192,24 @@
     max-width:300px;
     float:right;
 }
+
+
+/*About personal*/
+.block_about_personal .heading{/*Heading text*/
+    text-align: center;
+    margin:100px 0 40px 0;
+}
+.block_about_doctors{/*Общее размещение*/
+    display:flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.block_about_doctors .name{/*Отсуп от имени к работе*/
+    margin:16px 0 0 0;
+}
+.block_about_doctors .job{
+    margin:5px 0 5px 0;
+}
+.block_about_doctors a:not(:last-child){/*Горизонтальные отступы для соц сетей*/
+    margin-right:10px;
+}
