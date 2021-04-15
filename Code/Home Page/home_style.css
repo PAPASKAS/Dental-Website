@@ -1,12 +1,9 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
-*,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-    }
+
 /*Эти два контейннерта используется лишь в 3 первых блоках*/
 .container{
     max-width:1280px;
@@ -220,9 +217,53 @@
     margin-right:15px;
 }
 
+
 /*Slider*/
+.block_slider > .heading{/*heading slider*/
+    text-align:center;
+    margin:110px 0 50px 0;
+}
+.slides{/*horiz align main blocks*/
+    display:flex;
+    justify-content: space-between;
+}
+.slides > div{
+    display:grid;/*for vert align slide*/
+    background: url(../../Source/Images/background_comment.svg)center top;/*background image "cloud" comment*/
+}
+.slides p:first-of-type,/*width for heading slide*/
+.slides p:nth-child(2),/*width for comment*/
+.slides p:nth-child(3),/*width for name*/
+.slides p:last-child{/*width for job*/
+    max-width:270px;
+}
+.slides > div > div:first-child{
+    align-self: end;/*vert align slide*/
+    display:grid;/*for align img*/
+    text-align:center;
+}
+.slides > div > div img{/*align photo profile*/
+    justify-self: center;
+    margin:90px 0 9px 0;
+}
+.slide_1,/*Left and Right block below is*/
+.slide_3{
+    margin-top:50px;
+}
+.switches > div{/*switches*/
+    display:flex;
+    max-width:50px;
+    margin: 23px auto 0 auto;
+    justify-content:space-around
+}
+input[type="radio"]:checked{
+    background-color: #e145a3;
+}
 
 /*Our_blog(articles)*/
+.our_block{/*margin-botton main block*/
+    margin-bottom:75px;
+}
 .block_our_block .heading{/*padding between this block and slider*/
     text-align:center;
     margin-top:80px;
@@ -269,3 +310,64 @@
     margin:10px 0 6px 0;
 }
 
+/*Footer*/
+.footer{/*background-color*/
+    width:100%;
+    background: #0096FF;
+}
+.block_footer{/*horiz align items*/
+    display:flex;
+}
+.item_footer{/*== width items & main block margin*/
+    margin:40px 0 37px 0;
+    --width-w:25%;
+    width:var(--width-w);
+}
+.item_footer_1{/*width first block footer*/
+    width:calc(var(--width-w)+450px);
+}
+.item_footer_1 p:first-of-type{/*отступы от заголовка*/
+    margin: 36px 0 30px 0;
+}
+.item_footer_2 div:not(:last-child){/*vert margin between items*/
+    margin:0 0 19px 0;
+}
+.item_footer_2 div:last-child{/*margin-top for last item*/
+    margin-top:29px;
+}
+.item_footer_3{/*vert align items*/
+    display:grid;
+}
+.item_footer_3 > div{/*горизонт расположение соц сетей*/
+    display:flex;
+}
+.item_footer_3 > div > div{/*отступы для соцсетей и их названиями*/
+    width:calc(15%/2);
+}
+.item_footer_4 p:last-of-type{/*width & vert margin center item*/
+    margin:30px 0 17px;
+    width:200px;
+}
+/*style for input in footer*/
+.footer form {
+    position: relative;
+}
+.footer input {
+    display: block;
+    width: 100%;
+    height: 27px;
+    padding: 0 7px;
+    outline:none;
+    border:none;
+}
+.footer button {
+    position: absolute;
+    bottom: .2em;
+    right: .4em;
+    height: 2.3em;
+    width:7em;
+    outline:none;
+    border:1px solid #0096FF;
+    cursor: pointer;
+    background-color: #0096FF;
+}
