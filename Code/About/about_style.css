@@ -1,25 +1,12 @@
 *{
     margin:0;
     padding:0;
-    box-sizing: border-box;
 }
-
-/*Эти два контейннерта используется лишь в 3 первых блоках*/
 .container{
-    max-width:1280px;
-    margin:0 auto;
-}
-.container_for_padding{
-    max-width:1150px;/*Не 1170 ради отступов*/
-    margin:0 auto;
-    padding:0 10px;
-}
-
-/*Адекаватный контейнер*/
-.container_2{
     max-width:1170px;
     margin:0 auto;
 }
+
 
 /*Header*/
 .header{/*Общее начертание*/
@@ -117,126 +104,81 @@
 }
 
 
-/* Intro */
+/*Intro*/
 .intro{
-    margin:0 0 100px 0;
-}
-.intro_block{
-    display:flex;/*Расположение главных блоков*/
-    justify-content: space-between;/* for big laptop*/
-}
-.first_child_intro{
-    display:grid;/*Центрирование текста слева*/
-    margin-left:55px;
-}
-.first_child_intro div{
-    margin:auto 0;/*Центрирование текста слева*/
-}
-.make_appointment_button{/*make_appointment_button*/
-    width: 248px;
-    height: 64px;
-    border-radius:10px;
-    background-color:#0096FF;
-    display:table-cell;
-    vertical-align: middle;
-}
-#make_appointment{
-    text-align: center;
-}
-#description{
-    margin-top:15px;
-    margin-bottom:16px;
-}
-#lorem_intro{
-    margin-bottom:33px;
-}
-
-/*Block phone*/
-.block_phone{
-    background-color:#F0F6FB;
-    height:148px;
-    display:flex;
-}
-.block_phone div{
-    width:33%;
-    text-align: center;
-    margin:auto 0;
-}
-
-/*Service_description*/
-.block_service_description{
-    display:grid;
-    grid-auto-flow:column;
-    justify-content: space-between;
-    margin:72px 0 100px 0;
-}
-.item_service_description{/*align blocks*/
-    width:250px;
-    height: 180px;
-    background-color: #0096FF;
-    border-radius: 20px;
-    display:grid;
-}
-.padding_item_service_description{/*padding in item*/
-    max-width:220px;
-    max-height: 220px;
-    margin:auto;
-    display:grid;/*vertical align child*/
-}
-.padding_item_service_description div:first-child{/*Img*/
-    justify-self:end;
-    margin-right:20px;
-}
-.padding_item_service_description div p:first-child{/*padding child text*/
-    margin:5px 0;
-}
-
-/*Block_of_recommendation*/
-.block_of_recommendation{/*Общее расположение и круг сзади*/
-    display:flex;
-    background: url(../../Source/Images/img_1_recomendation.svg) no-repeat center top;
-    align-items:center;
-}
-#RELAX_YOUR_DENTIST_KNOWS_BEST{/*Отсутпы между блоков текста*/
-    margin:0 0 28px 0;
-}
-.text_recomm{/*Отсутпы между блоков текста*/
-    margin:3px 0 25px 0;
-}
-
-/*our umbrella*/
-.block_our_umbrella{/*Общее начертание*/
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-}
-.block_our_umbrella .item_1,.item_8{/*align first and last block*/
-    grid-column:1/4;
+    width:100%;
+    background: #0096FF;
     text-align:center;
 }
-.block_our_umbrella .item_1{/*padding between heading and items*/
-    margin:70px 0 81px 0;
+.intro_block{
+    display:grid;
+    height:148px;
+    align-content: center;
 }
-.block_our_umbrella .text_item{/*padding between text and link*/
-    margin: 0 0 40px 0;
+.intro_block div{
+    align-self: center;
 }
-.block_our_umbrella .link_item{/*padding between link and text and "Explore all"*/
-    margin: 0 0 85px 0;
-}
-.block_our_umbrella .link_item img{/*padding between img "arrow" and text "explore"*/
-    margin-left:9px;
-}
-.block_our_umbrella .text{/*width text*/
-    width:286px;
-}
-.block_our_umbrella .child_item_3,.child_item_6{/*align content in blocks*/
-    max-width:300px;
-    margin:0 auto;
-}
-.block_our_umbrella .child_item_4,.child_item_7{/*align content in blocks*/
-    max-width:300px;
-    float:right;
+.intro_block div:first-child{
+    margin: 0 0 11px 0;
 }
 
+
+/*Descripion about us*/
+.block_description_about{/*Общее расположение*/
+    display:grid;
+    grid-auto-flow:row;
+    grid-template-columns: 1fr 1fr;
+    margin:87px 0 106px 0;/*внешние отступы*/
+}
+.block_description_about > div:first-child,
+.block_description_about > div:last-child{
+    display:grid;/*for adaptation img*/
+}
+.block_description_about img{/*adaptation img*/
+    max-width:100%;
+    margin:auto 0;
+}
+.block_description_about div:nth-child(2) h2{/*right top block*/
+    margin:0px 0 20px 0;
+}
+.block_description_about div:nth-child(2) p:first-of-type{/*right top block*/
+    margin:0 0 10px 0;
+}
+.block_description_about div:nth-child(3) p:first-of-type{/*left bottom block*/
+    margin:0px 0 14px 0;
+}
+.block_description_about div:nth-child(2),
+.block_description_about div:nth-child(3){
+    margin:auto 0;
+}
+.block_description_about div:nth-child(3) p:last-of-type{/*left bottom block*/
+    max-width:571px;
+}
+
+
+/*Clinic departments*/
+.block_departments{/*Общее начертание*/
+    display:grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.block_departments div:first-child{/*heading this block*/
+    grid-column:1/5;
+    margin-bottom:20px;
+    text-align:center;
+}
+.block_departments div:nth-child(2){/*descripion this block*/
+    grid-column:1/5;
+    text-align:center;
+    max-width:650px;
+    margin:0 auto 70px auto;
+}
+.block_departments div p:first-of-type{/*heading child this block*/
+    margin-bottom:11px;
+}
+.block_departments div p:last-of-type{/*text child*/
+    max-width:253px;
+}
 
 /*About personal*/
 .block_about_personal .heading{/*Heading*/
@@ -261,6 +203,9 @@
 
 
 /*Slider*/
+.block_slider{
+    margin: 0 0 84px 0;
+}
 .block_slider > .heading{/*heading slider*/
     text-align:center;
     margin:110px 0 50px 0;
@@ -300,56 +245,6 @@
 }
 input[type="radio"]:checked{
     background-color: #e145a3;
-}
-
-/*Our_blog(articles)*/
-.our_block{/*margin-botton main block*/
-    margin-bottom:75px;
-}
-.block_our_block .heading{/*padding between this block and slider*/
-    text-align:center;
-    margin-top:80px;
-}
-.block_our_block > .heading p:last-child{
-    margin:0 auto 43px auto;
-    max-width:540px;
-}
-.block_articles{/*общее расположение*/
-    display:flex;
-}
-.block_articles article > div > div{/*Data, like, author and icon*/
-    display:flex;
-}
-.block_articles article > div .author{
-    margin-right:38px;
-}
-.quantity_likes span:first-child:hover{
-    cursor:pointer;
-}
-.quantity_comment span:first-child:hover{
-    cursor:pointer;
-}
-.block_articles article > div .quantity_likes,
-.block_articles article > div .date{
-    margin-right:22px;
-}
-.block_articles > .item_3 > div{
-    width:92%;
-    float:right
-}
-.block_articles > .item_2 > div{
-    width:92%;
-    margin:0 auto;
-}
-.quantity_likes, .quantity_comment{
-    display:flex;
-}
-.date, .quantity_likes span, .quantity_comment span{
-    margin:auto 0;
-    margin-right:6px;
-}
-.block_articles footer p:first-child{/*vert padd in footer*/
-    margin:10px 0 6px 0;
 }
 
 /*Footer*/
@@ -405,7 +300,7 @@ input[type="radio"]:checked{
 .footer button {
     position: absolute;
     bottom: .2em;
-    right: .4em;
+    right: -1em;
     height: 2.3em;
     width:7em;
     outline:none;

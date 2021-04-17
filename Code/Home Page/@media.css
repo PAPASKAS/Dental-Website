@@ -1,35 +1,20 @@
-@media(max-width:767px){/*Header*/
-    .logo{
-        order:-1;
-        margin-right:15px;
+/*Header*/
+@media(max-width:1200px){
+    .header{
+        padding: 0 30px;
     }
-    .logo > div{
-        margin:0;
-    }
-    .social_network{
-        display:none;
-    }
-    @media(max-width:550px){
-        #svg_header_teeth{
+    @media(max-width:767px){
+        .header .social_network{
             display:none;
         }
-        .container{
-            padding:0;
+        .hamburger_header{
+            display:grid;
         }
-        .pages_site li:last-child{
-            margin-right:15px;
+        .header .pages_site{
+            display: none;
         }
-    }
-    
-    @media(max-width:425px){
-        .logo{
-            display:none;
-        }
-        .container{
-            padding:0;
-        }
-        .pages_site{
-            margin:0 auto;
+        .header .logo div{
+            margin: auto 0;
         }
     }
 }
