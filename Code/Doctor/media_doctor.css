@@ -1,0 +1,147 @@
+/*Header*/
+@media(max-width:1200px){
+    .header{
+        padding: 0 30px;
+    }
+    @media(max-width:767px){
+        .header .social_network{
+            display:none;
+        }
+        .hamburger_header{
+            display:grid;
+        }
+        .header .pages_site{
+            display: none;
+        }
+        .header .logo div{
+            margin: auto 0;
+        }
+    }
+}
+
+/*our doctor*/
+@media(max-width:1025px){
+    .block_our_doctor > div:first-child{
+        display:none;
+    }
+    .block_our_doctor{
+        text-align:center;
+    }
+    .block_our_doctor > div{
+        margin:0 auto;
+        width:70%;
+    }
+    @media (max-width:600px) {
+        .block_our_doctor p{
+            height: 210px;
+            overflow: hidden;
+        }
+    }
+}
+
+
+/*slider*/
+@media(max-width:1400px){
+    .slider{
+        width:872px;
+        margin:0 auto;
+    }
+    .nav_slider{
+        display:none;
+    }
+    .mobile_button_slider{
+        transform: translateY(-590px);
+        display:flex;
+        width:1000px;
+        margin:0 auto;
+    }
+    .mobile_button_slider span{
+        margin-left:950px;
+    }
+    .footer{/*padding between slider and footer*/
+        margin-top:0;
+    }
+    @media(max-width:1025px){
+        .slider{
+            width:573px;
+        }
+        .mobile_button_slider{
+            width:600px;
+        }
+        .mobile_button_slider span{
+            margin-left:610px;
+        }
+        
+    }
+    @media(max-width:769px){
+        .mobile_button_slider{
+            display:none;
+        }
+    }
+    @media(max-width:595px){
+        .slider{
+            width:296px;
+            padding-left:24px;/*центрирование докторов*/
+        }
+    }
+}
+
+
+
+/*Footer*/
+@media(max-width:1000px){
+    .block_footer{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .item_footer_1{
+        grid-column:1/3;
+        text-align:center;
+        margin:20px auto 20px auto;
+    }
+    .item_footer_2,.item_footer_3{
+        margin: 0 auto;
+    }
+    .item_footer_3 > div > div{/*отступы для соцсетей и их названиями*/
+        width:calc(35%/2);
+    }
+    .item_footer_4{
+        grid-column:1/3;
+        width:400px;
+        margin: 20px auto 30px auto;        
+    }
+    @media(max-width:670px){
+        .item_footer_4{
+            display:none;
+        }
+        .item_footer_2{
+            display:none;
+        }
+        .item_footer_3{/*horiz align soc*/
+            display:flex;
+            grid-column:1/3;
+            margin:0 auto;
+        }
+        .item_footer_3 > div > div:last-of-type{/*del name soc net*/
+            display:none;
+        }
+        .item_footer_3 > div:not(:last-child){
+            margin:0 auto 20px auto;
+        }
+        .item_footer_3 p{
+            display:none;
+        }
+        .item_footer_1 p{
+            margin:0 auto;
+            max-width:250px;
+        }
+        .item_footer_1 p:first-of-type{
+            margin:10px auto;
+            max-width:150px;
+            max-height:50px;
+        }
+        .item_footer_1{
+            max-width:250px;
+        }
+    }
+}

@@ -32,10 +32,10 @@ a{
     font-size:14px;
     line-height: 20px;
 }
-.pages_site ul li:first-of-type a{
+.pages_site ul li:nth-child(2) a{
     color:#2296F9;
 }
-.menu div ul li:first-of-type a{
+.menu div ul li:nth-child(2) a{
     color:#2296F9;
 }
 
@@ -62,8 +62,8 @@ a{
     color: #222222;
 }
 
-/*decription about us*/
-.block_description_about div:nth-child(2) h2{
+/*Our doctor*/
+.block_our_doctor h2{
     font-family: "Manrope-regular";
     font-style: normal;
     font-weight: 800;
@@ -71,24 +71,19 @@ a{
     line-height: 64px;
     font-feature-settings: 'liga' off;
 }
-.block_description_about div:nth-child(2) p:first-of-type{
-    font-family: "Manrope-regular";
-    font-style: normal;
-    font-weight: 1;
-    font-size: 30px;
-    line-height: 64px;
-    font-feature-settings: 'liga' off;
-}
-.block_description_about div:nth-child(2) p:last-of-type{
+.block_our_doctor p{
     font-family: "Manrope-regular";
     font-style: normal;
     font-weight: 1;
     font-size: 16px;
     line-height: 26px;
     font-feature-settings: 'liga' off;
-    color: #18191F;
+    color: #18191F;    
 }
-.block_description_about div:nth-child(3) p:first-of-type{
+
+
+/*slider*/
+.heading_slider{
     font-family: "Manrope-regular";
     font-style: normal;
     font-weight: 1;
@@ -96,127 +91,64 @@ a{
     line-height: 64px;
     font-feature-settings: 'liga' off;
 }
-.block_description_about div:nth-child(3) p:last-of-type{
+.page_slider p:first-of-type{/*name*/
     font-family: "Manrope-regular";
     font-style: normal;
     font-weight: 1;
-    font-size: 16px;
-    line-height: 26px;
-    font-feature-settings: 'liga' off;
-    color: #18191F;
-}
-
-/*clinic_departments*/
-.block_departments div:first-child{/*heading this block*/
-    font-family: "manrope-regular";
-    font-style: normal;
-    font-weight: 1;
-    font-size: 36px;
-    line-height: 49px;  
-}
-.block_departments div:nth-child(2){/*descripion this block*/
-    font-family: "helvetica-regular";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-}
-.block_departments div p:first-of-type{/*heading child this block*/
-    font-family: "helvetica-regular";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    color: #2296F9;
-}
-.block_departments div p:last-of-type{/*text child*/
-    font-family: "helvetica-light";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 16px;
-}
-
-/*About personal*/
-.block_about_doctors .name{
-    font-family: "Manrope-regular";
     font-size: 20px;
-    font-weight: 1;
     line-height: 27px;
-    letter-spacing: -0.37692299485206604px;
+    letter-spacing: -0.376923px;
+    text-transform: uppercase;
 }
-.block_about_doctors .job{
+.page_slider p:last-of-type{/*job*/
     font-family: "Manrope-regular";
-    font-size: 16px;
+    font-style: normal;
     font-weight: 1;
-    line-height: 21,86px;
-    letter-spacing: -0.37692299485206604px;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.376923px;
+    text-transform: uppercase;
     color: #0096FF;
 }
-.block_about_personal .heading{
-    font-family: "Manrope-regular";
-    font-size: 36px;
-    font-weight: 800;
-    line-height: 64px;
-    letter-spacing: 0em;
-}
 
 
-/*Slider*/
-.block_slider .heading p:first-of-type{
+/*slider*/
+.block_slider .heading{/*heading slider*/
     font-family: "Manrope-regular";
     font-style: normal;
-    font-weight: 800;
+    font-weight: 1;
     font-size: 36px;
-    line-height: 64px;
+    line-height: 64px; 
     font-feature-settings: 'liga' off;
-    color: #18191F;
-} 
-.block_slider .heading p:last-of-type{
+}
+.slide p:first-of-type{/*name*/
     font-family: "Manrope-regular";
     font-style: normal;
     font-weight: 1;
-    font-size: 18px;
-    line-height: 32px;
-    font-feature-settings: 'liga' off;
-    color: #18191F;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.376923px;
+    text-transform: uppercase;    
 }
-.slides p:first-of-type{
-    font-family: "Manrope-regular";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 32px;
-    font-feature-settings: 'liga' off;
-    color: #18191F;
-}
-.slides p:nth-child(2){
+.slide p:last-of-type{/*job*/
     font-family: "Manrope-regular";
     font-style: normal;
     font-weight: 1;
-    font-size: 14px;
-    line-height: 24px;
-    font-feature-settings: 'liga' off;
-    color: #18191F;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.376923px;
+    text-transform: uppercase;
+    color: #0096FF;
 }
-.slides p:nth-child(3){
-    font-family: "Manrope-regular";
+.nav_slider span{/*button slides*/
+    font-family: "Roboto-regular";
     font-style: normal;
-    font-weight: 1;
-    font-size: 18px;
-    line-height: 28px;
-    font-feature-settings: 'liga' off;
-    color: #18191F;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #BBBBBB;
 }
-.slides p:last-child{
-    font-family: "Manrope-regular";
-    font-style: normal;
-    font-weight: 1;
-    font-size: 14px;
-    line-height: 24px;
-    font-feature-settings: 'liga' off;
-    color: #474A57;
-}
+
 
 /*footer*/
 .footer{

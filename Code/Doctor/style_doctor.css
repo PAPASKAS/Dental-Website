@@ -78,7 +78,6 @@
     to{ height:149px;
         width: 200px;}
 }
-
 .menu{/*open hamburger*/
     position: absolute;
     right:0;
@@ -124,133 +123,93 @@
 
 
 /*Descripion about us*/
-.block_description_about{/*Общее расположение*/
-    display:grid;
-    grid-auto-flow:row;
-    grid-template-columns: 1fr 1fr;
-    margin:87px 0 106px 0;/*внешние отступы*/
+.block_our_doctor{/*Общее расположение*/
+    display:flex;
+    margin:87px 0 70px 0;/*внешние отступы*/
 }
-.block_description_about > div:first-child,
-.block_description_about > div:last-child{
+.block_our_doctor > div{
+    width:50%;/*==blocks*/
+}
+.block_our_doctor > div:last-child{
+    display:grid;/*for vert align text*/
+}
+.block_our_doctor > div:last-child div{
+    margin:auto 0;/*vert align text*/
+}
+.block_our_doctor > div:first-child{
     display:grid;/*for adaptation img*/
 }
-.block_description_about img{/*adaptation img*/
+.block_our_doctor img{/*adaptation img*/
     max-width:100%;
     margin:auto 0;
-}
-.block_description_about div:nth-child(2) h2{/*right top block*/
-    margin:0px 0 20px 0;
-}
-.block_description_about div:nth-child(2) p:first-of-type{/*right top block*/
-    margin:0 0 10px 0;
-}
-.block_description_about div:nth-child(3) p:first-of-type{/*left bottom block*/
-    margin:0px 0 14px 0;
-}
-.block_description_about div:nth-child(2),
-.block_description_about div:nth-child(3){
-    margin:auto 0;
-}
-.block_description_about div:nth-child(3) p:last-of-type{/*left bottom block*/
-    max-width:571px;
-}
-
-
-/*Clinic departments*/
-.block_departments{/*Общее начертание*/
-    display:grid;
-    grid-auto-flow: row;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.block_departments div:first-child{/*heading this block*/
-    grid-column:1/5;
-    margin-bottom:20px;
-    text-align:center;
-}
-.block_departments div:nth-child(2){/*descripion this block*/
-    grid-column:1/5;
-    text-align:center;
-    max-width:650px;
-    margin:0 auto 70px auto;
-}
-.block_departments div p:first-of-type{/*heading child this block*/
-    margin-bottom:11px;
-}
-.block_departments div p:last-of-type{/*text child*/
-    max-width:253px;
-}
-
-
-/*About personal*/
-.block_about_personal .heading{/*Heading*/
-    text-align: center;
-    margin:100px 0 40px 0;
-}
-.block_about_doctors{/*Общее размещение*/
-    display:grid;
-    grid-auto-flow:column;
-    text-align: center;
-    justify-content: space-between;
-}
-.block_about_doctors .name{/*Отсуп от имени к работе*/
-    margin:16px 0 0 0;
-}
-.block_about_doctors .job{
-    margin:5px 0 5px 0;
-}
-.block_about_doctors a:not(:last-child){/*Горизонтальные отступы для соц сетей*/
-    margin-right:15px;
 }
 
 
 /*Slider*/
-.block_slider{
-    margin: 0 0 84px 0;
+.slider,
+.block_slider .heading{/*align all text and icon*/
+    text-align: center;
+    overflow: hidden; /*for move sliders*/
 }
-.block_slider > .heading{/*heading slider*/
-    text-align:center;
-    margin:110px 0 50px 0;
+.block_slider .heading{/*vert padding heading*/
+    margin:100px 0 40px;
 }
-.slides{/*horiz align main blocks*/
-    display:flex;
-    justify-content: space-between;
+.sliders{
+    display:flex;/*align slide in slider*/
+    position:relative;/*for animation slider*/
+    transition: 500ms;
 }
-.slides > div{
-    display:grid;/*for vert align slide*/
-    background: url(../../Source/Images/background_comment.svg)center top;/*background image "cloud" comment*/
+.sliders > span{
+    margin-right:23.3px;/*padding between slides*/
 }
-.slides p:first-of-type,/*width for heading slide*/
-.slides p:nth-child(2),/*width for comment*/
-.slides p:nth-child(3),/*width for name*/
-.slides p:last-child{/*width for job*/
-    max-width:270px;
+.slide{/*align block in slide*/
+    display:grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap:23px;/*horiz padding between doctors*/
 }
-.slides > div > div:first-child{
-    align-self: end;/*vert align slide*/
-    display:grid;/*for align img*/
-    text-align:center;
+.slide > span > div{/*vert padding between items slide*/
+    margin-bottom:70px;
 }
-.slides > div > div img{/*align photo profile*/
-    justify-self: center;
-    margin:90px 0 9px 0;
+.slide > span p:last-of-type{/*vert padding job*/
+    margin-bottom:5px;
 }
-.slide_1,/*Left and Right block below is*/
-.slide_3{
-    margin-top:50px;
+.slide > span span:nth-child(5){/*middle icon(twitter)*/
+    margin:0 23px;
 }
-.switches > div{/*switches*/
-    display:flex;
-    max-width:50px;
-    margin: 23px auto 0 auto;
-    justify-content:space-around
+.slide > span span img{/*size soc net*/
+    width:15px;
+    height:15px;
 }
-input[type="radio"]:checked{
-    background-color: #e145a3;
+.nav_slider{/*nav menu slider*/
+    float:right;
 }
+.nav_slider span:not(:last-child){
+    background-color: #F6F6F6;
+    padding:9px 15px;/*size button slides*/
+    margin-right:10px;
+}
+.nav_slider span:last-child{
+    cursor: pointer;
+    padding:5px 7px;
+}
+.nav_slider span:last-child img{
+    padding:0 5px;
+}
+.mobile_button_slider{/*arrows mob ver*/
+    display:none;
+}
+.mobile_button_slider span{/*left arrow(mob ver)*/
+    font-size:50px;
+    margin-left:950px;
+    cursor: pointer;
+}
+
 
 /*Footer*/
 .footer{/*background-color*/
     width:100%;
+    margin-top:100px;
     background: #0096FF;
 }
 .block_footer{/*horiz align items*/
