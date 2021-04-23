@@ -3,6 +3,10 @@
     padding:0;
     box-sizing: border-box;
 }
+#like{/*size like*/
+    width:20px;
+    height:20px;
+}
 
 /*Эти два контейннерта используется лишь в 3 первых блоках*/
 .container{
@@ -302,6 +306,7 @@ input[type="radio"]:checked{
     background-color: #e145a3;
 }
 
+
 /*Our_blog(articles)*/
 .our_block{/*margin-botton main block*/
     margin-bottom:75px;
@@ -324,9 +329,6 @@ input[type="radio"]:checked{
     margin-right:38px;
 }
 .quantity_likes span:first-child:hover{
-    cursor:pointer;
-}
-.quantity_comment span:first-child:hover{
     cursor:pointer;
 }
 .block_articles article > div .quantity_likes,

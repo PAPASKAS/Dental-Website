@@ -1,0 +1,217 @@
+*{
+    text-decoration:none;
+}
+a{
+    color:black;
+}
+@font-face {
+    font-family: "manrope-regular";
+    src: url(../../Source/Fonts/Manrope-Regular.ttf);
+}
+@font-face {
+    font-family: "helvetica-regular";
+    src: url(../../Source/Fonts/Helvetica.ttf);
+}
+@font-face {
+    font-family: "helvetica-light"; 
+    src:url(../../Source/Fonts/helvetica-light.otf) format("OpenType"),
+        url(../../Source/Fonts/helvetica-light.ttf) format("TrueType");
+}
+@font-face {
+    font-family: "roboto-regular";
+    src: url(../../Source/Fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "rubik-regular";
+    src: url(../../Source/Fonts/Rubik-VariableFont_wght.ttf);
+}
+
+/*Header*/
+.pages_site li{
+    font-family:"manrope-regular";
+    font-size:14px;
+    line-height: 20px;
+}
+.pages_site ul li:nth-of-type(3) a{
+    color:#2296F9;
+}
+.menu div ul li:nth-of-type(3) a{
+    color:#2296F9;
+}
+
+/*Intro*/
+.intro_block{/* style for '/' */
+    font-family: "Helvetica-regular";
+    line-height: 33px;
+    font-size: 16px;
+}
+.intro_block div:first-child a{
+    font-family: "Helvetica-regular";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+.intro_block div:last-child a{
+    font-family: "Helvetica-regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #222222;
+}
+
+/*Our doctor*/
+.block_our_doctor h2{
+    font-family: "Manrope-regular";
+    font-size: 26px;
+    line-height: 26px;
+}
+.block_our_doctor p{
+    font-family: "Manrope-regular";
+    font-style: normal;
+    font-weight: 1;
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+}
+.block_our_doctor > div > div > div span:first-of-type{/*Author*/
+    font-family: "Roboto-regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    color: #2296F9;
+}
+.block_our_doctor > div > div > div span:not(:first-of-type){/*Date, comment, like*/
+    font-family:"Roboto-regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #999999;
+}
+.block_our_doctor > div > div > p > a{
+    color: #2296F9;
+}
+
+
+/*slider*/
+.slide > div p:first-of-type{/*heading*/
+    font-family: "Manrope-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+}
+.slide > div p:last-of-type{/*text*/
+    font-family: "Manrope-regular";
+    font-style: normal;
+    font-weight: 1;
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+}
+.slide > div > div span:first-of-type{/*Author*/
+    font-family: "Roboto-regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    color: #2296F9;
+}
+.slide > div > div span:not(:first-of-type){/*Date, comment, like*/
+    font-family:"Roboto-regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #999999;
+}
+.nav_slider span{
+    font-family: "Roboto-regular";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #BBBBBB;
+}
+
+
+/*footer*/
+.footer{
+    color:white;
+}
+.item_footer_1 p:first-of-type{
+    font-family: "Manrope-regular";
+    font-size: 20px;
+    font-weight: 1;
+    line-height: 27px;
+    letter-spacing: 0em;
+}
+.item_footer_1 p:last-of-type{
+    font-family: "Manrope-regular";
+    font-size: 14px;
+    font-weight: 1;
+    line-height: 19px;
+    letter-spacing: 0em;
+}
+.item_footer_2 p:first-child{
+    font-family: "Manrope-regular";
+    font-size: 14px;
+    font-weight: 1;
+    line-height: 19px;
+    letter-spacing: 0em;
+}
+.item_footer_2 p:last-child{
+    font-family: "Manrope-regular";
+    font-size: 12px;
+    font-weight: 1;
+    line-height: 16px;
+    letter-spacing: 0em;
+}
+.item_footer_3 p{
+    font-family: "Manrope-regular";
+    font-style: normal;
+    font-weight: 1;
+    font-size: 20px;
+    line-height: 27px;
+}
+.item_footer_3 :not(p){
+    font-family: "Manrope-regular";
+    font-style: normal;
+    font-weight: 1;
+    font-size: 12px;
+    line-height: 16px;
+}
+.item_footer_4 p:first-of-type{
+    font-family:"Manrope-regular";
+    font-style: normal;
+    font-weight: 1;
+    font-size: 20px;
+    line-height: 27px;
+}
+.item_footer_4:last-of-type{
+    font-family:"Manrope-regular";
+    font-style: normal;
+    font-weight: 1;
+    font-size: 14px;
+    line-height: 19px;
+}
+.item_footer_4 ::placeholder{
+    font-family: "rubik-regular";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    color:#808080;
+}
+.item_footer_4 button{
+    color:white;
+    font-family: "Rubik-regular";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+}

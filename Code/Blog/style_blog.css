@@ -1,0 +1,284 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    max-width:1170px;
+    margin:0 auto;
+}
+#like{/*size like*/
+    width:20px;
+    height:20px;
+}
+#comment{/*size comment*/
+    width:20px;
+    height:20px;
+}
+
+/*Header*/
+.header{/*Общее начертание*/
+    display:grid;
+    grid-auto-flow:column;
+    justify-content: space-between;
+    height:72px;
+}
+.item_header:first-child,
+.item_header:nth-child(3){
+    width:250px;
+}
+.pages_site ul{/*Pages site*/
+    display:flex;
+}
+.pages_site{/*Вертикальное расположние*/
+    display:grid;
+    align-items:center;
+}
+.pages_site li:not(:last-child){/*Отступы между ними*/
+    margin-right:32px;
+}
+.pages_site li:hover{
+    background-color: rgba(200, 250, 247, 0.7);
+    border-radius: 15px;
+    transition-duration: 500ms;
+}
+.logo{/*Logo*/
+    display:grid;
+}
+.logo > div{
+    margin:auto;
+    display:flex;
+}
+.logo a{
+    align-self:center;
+    margin-left:10px;
+}
+.social_network{/*Soc net*/
+    display:flex;
+}
+.container_soc{/*Container soc*/
+    margin:auto 0 auto auto;
+    display:flex;
+    align-self:flex-end;
+}
+.social_network a{
+    margin:auto 0;
+}
+.padding_soc{/*Margin меня не устроил*/
+    width:30px;
+}
+.hamburger_header{/*general arrangement button hamburger*/
+    height:15px;
+    display:none;/*before mob ver*/
+    margin:auto 0;
+}
+.hamburger_header div{/*style button hamburger*/
+    height: 3px;
+    background:black;
+    width:20px;
+}
+.hamburger_header div:not(:first-child){
+    margin:3px 0 0 0;/*vert align sticks(nutton hamburger)*/
+}
+@keyframes open_menu_anima {
+    from{height:0; 
+        width:0}
+    to{ height:149px;
+        width: 200px;}
+}
+
+.menu{/*open hamburger*/
+    position: absolute;
+    right:0;
+    animation:open_menu_anima 1000ms forwards;
+    background-color: white;
+    display:none;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.menu > div:first-child ul{
+    list-style:none;
+    margin-top:10px;
+}
+.menu > div:first-child :not(:last-child){/*vert align pages_site*/
+    margin-bottom:10px;
+}
+.menu > div:last-child div{/*Soc net*/
+    display:grid;
+    margin-top:10px;
+}
+.menu > div:last-child div :not(:last-child){/*vert align soc net*/
+    margin:0 auto 10px auto;
+}
+
+
+/*Intro*/
+.intro{
+    width:100%;
+    background: #0096FF;
+    text-align:center;
+}
+.intro_block{
+    display:grid;
+    height:148px;
+    align-content: center;
+}
+.intro_block div{
+    align-self: center;
+}
+.intro_block div:first-child{
+    margin: 0 0 11px 0;
+}
+
+
+/*Our doctor*/
+.block_our_doctor{/*Общее расположение*/
+    display:flex;
+    margin:87px 0 70px 0;/*внешние отступы*/
+}
+.block_our_doctor > div{
+    width:50%;/*==blocks*/
+}
+.block_our_doctor > div:last-child{
+    display:grid;/*for vert align text*/
+}
+.block_our_doctor > div:last-child div{
+    margin:auto 0;/*vert align text*/
+}
+.block_our_doctor > div:first-child{
+    display:grid;/*for adaptation img*/
+}
+.block_our_doctor img{/*adaptation img*/
+    max-width:100%;
+    margin:auto 0;
+}
+.block_our_doctor > div > div > div span:first-of-type{margin-right:38px;}/*Author*/
+.block_our_doctor > div > div > div span:nth-of-type(2){margin-right:12px;}/*Date*/
+.block_our_doctor > div > div > div span:nth-of-type(3){margin-right:22px;}/*comment*/
+.block_our_doctor > div > div > div{padding:8px 0 15px 0;}/*outer padding*/
+.block_our_doctor > div > div > div span img{/*location like and comment*/
+    vertical-align: middle; 
+    padding-bottom:3px;
+    margin-right:2px;
+}
+.block_our_doctor p:first-of-type{/*vert padding between p text*/
+    margin-bottom:25px;
+}
+
+
+
+/*slider*/
+.block_slider{
+    margin:80px 0 60px 0;
+}
+.slide{
+    display:grid;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap:50px;
+}
+.slide:not(:last-child){/*padding between slides*/
+    margin-right:52px;
+}
+.slider{
+    overflow:hidden;
+}
+.move_slider{
+    display:flex;
+    position:relative;
+    transition: 500ms;
+}
+.slide > div > div span:first-of-type{margin-right:38px;}/*Author*/
+.slide > div > div span:nth-of-type(2){margin-right:12px;}/*Date*/
+.slide > div > div span:nth-of-type(3){margin-right:22px;}/*comment*/
+.slide > div > div span img{/*location like and comment*/
+    vertical-align: middle; 
+    padding-bottom:3px;
+    margin-right:2px;
+}
+.slide > div p{/*width text*/
+    max-width:353px;
+}
+.slide > div p:first-of-type{
+    margin-bottom:6px;
+}
+.nav_slider{
+    margin:50px 0 0 0;/*padding between slider and nav_slider*/
+    display:flex;
+    justify-content: flex-end;
+}
+.nav_slider span{
+    background-color:#F6F6F6;
+    padding:14px 17px 9px 17px;
+}
+.nav_slider span:not(:last-child){
+    margin-right:8px;
+}
+.current_slide:nth-child(5),
+.current_slide:nth-child(6){
+    display:none
+}
+
+
+
+/*Footer*/
+.footer{/*background-color*/
+    width:100%;
+    margin-top:100px;
+    background: #0096FF;
+}
+.block_footer{/*horiz align items*/
+    display:flex;
+}
+.item_footer{/*== width items & main block margin*/
+    margin:40px 0 37px 0;
+    --width-w:25%;
+    width:var(--width-w);
+}
+.item_footer_1{/*width first block footer*/
+    width:calc(var(--width-w)+450px);
+}
+.item_footer_1 p:first-of-type{/*отступы от заголовка*/
+    margin: 36px 0 30px 0;
+}
+.item_footer_2 div:not(:last-child){/*vert margin between items*/
+    margin:0 0 19px 0;
+}
+.item_footer_2 div:last-child{/*margin-top for last item*/
+    margin-top:29px;
+}
+.item_footer_3{/*vert align items*/
+    display:grid;
+}
+.item_footer_3 > div{/*горизонт расположение соц сетей*/
+    display:flex;
+}
+.item_footer_3 > div > div{/*отступы для соцсетей и их названиями*/
+    width:calc(15%/2);
+}
+.item_footer_4 p:last-of-type{/*width & vert margin center item*/
+    margin:30px 0 17px;
+    width:200px;
+}
+/*style for input in footer*/
+.footer form {
+    position: relative;
+}
+.footer input {
+    display: block;
+    width: 100%;
+    height: 27px;
+    padding: 0 7px;
+    outline:none;
+    border:none;
+}
+.footer button {
+    position: absolute;
+    bottom: .2em;
+    right: -1em;
+    height: 2.3em;
+    width:7em;
+    outline:none;
+    border:1px solid #0096FF;
+    cursor: pointer;
+    background-color: #0096FF;
+}

@@ -26,6 +26,12 @@ a{
     font-size:14px;
     line-height: 20px;
 }
+.pages_site ul li:first-of-type a{
+    color:#2296F9;
+}
+.menu div ul li:first-of-type a{
+    color:#2296F9;
+}
 
 /*Intro*/
 #welcome{
