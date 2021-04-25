@@ -1,0 +1,332 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    max-width:1170px;
+    margin:0 auto;
+}
+
+
+/*Header*/
+.header{/*Общее начертание*/
+    display:grid;
+    grid-auto-flow:column;
+    justify-content: space-between;
+    height:72px;
+}
+.item_header:first-child,
+.item_header:nth-child(3){
+    width:250px;
+}
+.pages_site ul{/*Pages site*/
+    display:flex;
+}
+.pages_site{/*Вертикальное расположние*/
+    display:grid;
+    align-items:center;
+}
+.pages_site li:not(:last-child){/*Отступы между ними*/
+    margin-right:32px;
+}
+.pages_site li:hover{
+    background-color: rgba(200, 250, 247, 0.7);
+    border-radius: 15px;
+    transition-duration: 500ms;
+}
+.logo{/*Logo*/
+    display:grid;
+}
+.logo > div{
+    margin:auto;
+    display:flex;
+}
+.logo a{
+    align-self:center;
+    margin-left:10px;
+}
+.social_network{/*Soc net*/
+    display:flex;
+}
+.container_soc{/*Container soc*/
+    margin:auto 0 auto auto;
+    display:flex;
+    align-self:flex-end;
+}
+.social_network a{
+    margin:auto 0;
+}
+.padding_soc{/*Margin меня не устроил*/
+    width:30px;
+}
+.hamburger_header{/*general arrangement button hamburger*/
+    height:15px;
+    display:none;/*before mob ver*/
+    margin:auto 0;
+}
+.hamburger_header div{/*style button hamburger*/
+    height: 3px;
+    background:black;
+    width:20px;
+}
+.hamburger_header div:not(:first-child){
+    margin:3px 0 0 0;/*vert align sticks(nutton hamburger)*/
+}
+@keyframes open_menu_anima {
+    from{height:0; 
+        width:0}
+    to{ height:149px;
+        width: 200px;}
+}
+
+.menu{/*open hamburger*/
+    position: absolute;
+    right:0;
+    animation:open_menu_anima 1000ms forwards;
+    background-color: white;
+    display:none;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.menu > div:first-child ul{
+    list-style:none;
+    margin-top:10px;
+}
+.menu > div:first-child :not(:last-child){/*vert align pages_site*/
+    margin-bottom:10px;
+}
+.menu > div:last-child div{/*Soc net*/
+    display:grid;
+    margin-top:10px;
+}
+.menu > div:last-child div :not(:last-child){/*vert align soc net*/
+    margin:0 auto 10px auto;
+}
+
+
+/*Intro*/
+.intro{
+    width:100%;
+    background: #0096FF;
+    text-align:center;
+}
+.intro_block{
+    display:grid;
+    height:148px;
+    align-content: center;
+}
+.intro_block div{
+    align-self: center;
+}
+.intro_block div:first-child{
+    margin: 0 0 11px 0;
+}
+
+
+/*contact block*/
+.contact{
+    display:flex;
+    justify-content: space-between;
+    text-align:center;
+    margin:60px 0;
+}
+.contact > span{
+    width:33%;
+}
+.contact > span:first-of-type span{
+    float:left;
+}
+.contact > span:last-of-type span{
+    float:right;
+}
+.contact p:first-of-type{/*padding between text*/
+    margin: 12px 0 14px 0;
+}
+.contact #map{
+    color:#faaf3a;
+}
+
+
+/*map*/
+.map{
+    display:grid;
+    margin-bottom:60px;
+}
+.map iframe{
+    margin:0 auto;
+    width:100%;
+    height:700px;
+}
+
+
+/*get in touch*/
+.get_in_touch_block{
+    width:840px;
+    margin:0 auto;
+}
+.get_in_touch form{/*Расположение элементов*/
+    display:grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr;
+}
+.get_in_touch form div input,
+.get_in_touch form div textarea{/*input && textarea*/
+    border:none;
+    outline:none;
+    background: #F6F6F6;
+    border-radius: 5px;
+}
+.get_in_touch form div:first-child input,
+.get_in_touch form div:nth-child(2) input{/*login and email*/
+    width:405px;
+    height:50px;
+}
+.get_in_touch form div:nth-child(2){
+    padding-left:30px;
+}
+.get_in_touch form div:nth-child(3) input{/*subject*/
+    width:840px;
+    height: 50px;
+}
+.get_in_touch form div:nth-child(3){/*subject*/
+    margin:0 auto;
+    grid-column:1/3;
+}
+.get_in_touch form div:last-child textarea{/*your message*/
+    width:840px;
+    height: 150px;
+    resize:none;
+}
+.get_in_touch form div:last-child{/*your message*/
+    margin:0 auto;
+    grid-column:1/3;
+}
+.get_in_touch input{/*padding in*/
+    padding:0 0 0 10px;
+}
+.get_in_touch textarea{
+    padding: 10px 0 0 10px;
+}
+.get_in_touch{
+    display:grid;/*for align button*/
+}
+.get_in_touch button{
+    margin:44px auto;
+    width: 173px;
+    height: 48px;
+    background: #0096FF;
+    border-radius: 5px;
+    outline-color:#F6F6F6;
+    border:none;
+}
+
+
+/*Slider*/
+.psevdo_slider{
+    margin:0 0 100px 0;
+}
+.block_slider > .heading{/*heading slider*/
+    text-align:center;
+    margin:110px 0 50px 0;
+}
+.slides{/*horiz align main blocks*/
+    display:flex;
+    justify-content: space-between;
+}
+.slides > div{
+    display:grid;/*for vert align slide*/
+    background: url(../../Source/Images/background_comment.svg)center top;/*background image "cloud" comment*/
+}
+.slides p:first-of-type,/*width for heading slide*/
+.slides p:nth-child(2),/*width for comment*/
+.slides p:nth-child(3),/*width for name*/
+.slides p:last-child{/*width for job*/
+    max-width:270px;
+}
+.slides > div > div:first-child{
+    align-self: end;/*vert align slide*/
+    display:grid;/*for align img*/
+    text-align:center;
+}
+.slides > div > div img{/*align photo profile*/
+    justify-self: center;
+    margin:90px 0 9px 0;
+}
+.slide_1,/*Left and Right block below is*/
+.slide_3{
+    margin-top:50px;
+}
+.switches > div{/*switches*/
+    display:flex;
+    max-width:50px;
+    margin: 23px auto 0 auto;
+    justify-content:space-around
+}
+input[type="radio"]:checked{
+    background-color: #e145a3;
+}
+
+
+
+
+/*Footer*/
+.footer{/*background-color*/
+    width:100%;
+    background: #0096FF;
+}
+.block_footer{/*horiz align items*/
+    display:flex;
+}
+.item_footer{/*== width items & main block margin*/
+    margin:40px 0 37px 0;
+    --width-w:25%;
+    width:var(--width-w);
+}
+.item_footer_1{/*width first block footer*/
+    width:calc(var(--width-w)+450px);
+}
+.item_footer_1 p:first-of-type{/*отступы от заголовка*/
+    margin: 36px 0 30px 0;
+}
+.item_footer_2 div:not(:last-child){/*vert margin between items*/
+    margin:0 0 19px 0;
+}
+.item_footer_2 div:last-child{/*margin-top for last item*/
+    margin-top:29px;
+}
+.item_footer_3{/*vert align items*/
+    display:grid;
+}
+.item_footer_3 > div{/*горизонт расположение соц сетей*/
+    display:flex;
+}
+.item_footer_3 > div > div{/*отступы для соцсетей и их названиями*/
+    width:calc(15%/2);
+}
+.item_footer_4 p:last-of-type{/*width & vert margin center item*/
+    margin:30px 0 17px;
+    width:200px;
+}
+/*style for input in footer*/
+.footer form {
+    position: relative;
+}
+.footer input {
+    display: block;
+    width: 100%;
+    height: 27px;
+    padding: 0 7px;
+    outline:none;
+    border:none;
+}
+.footer button {
+    position: absolute;
+    bottom: .2em;
+    right: .1em;
+    height: 2.3em;
+    width:7em;
+    outline:none;
+    border:1px solid #0096FF;
+    cursor: pointer;
+    background-color: #0096FF;
+}
